@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>TestNG:  Listeners</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Listeners</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 30 15:59:33 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>26 seconds (26932 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.Listner.TestDemo.getFail()'><b>getFail</b><br>Test class: Test.Listner.TestDemo<br/>
+<a href="#Output-343965883" onClick='toggleBox("Output-343965883", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-343965883" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-343965883">
+[Info] : Test Case is Faild <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.Listner.TestDemo@4520ebad</td></tr>
+<tr>
+<td title='Test.Listner.TestDemo.getSkip()'><b>getSkip</b><br>Test class: Test.Listner.TestDemo<br/>
+<a href="#Output-1926004335" onClick='toggleBox("Output-1926004335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926004335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926004335">
+[Info] : Test Case is Skiped <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.Listner.TestDemo@4520ebad</td></tr>
+<tr>
+<td title='Test.Listner.TestDemo.getTitle()'><b>getTitle</b><br>Test class: Test.Listner.TestDemo<br/>
+<a href="#Output-903525611" onClick='toggleBox("Output-903525611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903525611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903525611">
+[Info] : Title is Matched <br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Test.Listner.TestDemo@4520ebad</td></tr>
+<tr>
+<td title='Test.Listner.TestDemmo1.verify_LaunchWebsite()'><b>verify_LaunchWebsite</b><br>Test class: Test.Listner.TestDemmo1<br/>
+<a href="#Output-1551629761" onClick='toggleBox("Output-1551629761", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1551629761" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1551629761">
+[Info] : Launch Website is Verified <br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Test.Listner.TestDemmo1@d2cc05a</td></tr>
+<tr>
+<td title='Test.Listner.TestDemmo1.verify_Login()'><b>verify_Login</b><br>Test class: Test.Listner.TestDemmo1<br/>
+<a href="#Output-1423983012" onClick='toggleBox("Output-1423983012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1423983012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1423983012">
+[Info] : Login Successfully Verified<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Test.Listner.TestDemmo1@d2cc05a</td></tr>
+<tr>
+<td title='Test.Listner.TestDemmo1.verify_getFailed()'><b>verify_getFailed</b><br>Test class: Test.Listner.TestDemmo1<br/>
+<a href="#Output-746074699" onClick='toggleBox("Output-746074699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-746074699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-746074699">
+[Info] : Test Case is Failed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.Listner.TestDemmo1@d2cc05a</td></tr>
+<tr>
+<td title='Test.Listner.TestDemmo1.verify_getSkip()'><b>verify_getSkip</b><br>Test class: Test.Listner.TestDemmo1<br/>
+<a href="#Output-127791068" onClick='toggleBox("Output-127791068", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-127791068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-127791068">
+[Info] : Test Case is Skiped<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Test.Listner.TestDemmo1@d2cc05a</td></tr>
+</table><p>
+</body>
+</html>

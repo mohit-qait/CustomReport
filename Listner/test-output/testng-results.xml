@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[[Info] : Test Case is Faild ]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Title is Matched ]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Test Case is Skiped ]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Launch Website is Verified ]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Login Successfully Verified]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Test Case is Failed]]>
+    </line>
+    <line>
+      <![CDATA[[Info] : Test Case is Skiped]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26932" started-at="2020-03-30T10:29:33Z" finished-at="2020-03-30T10:30:00Z">
+    <groups>
+    </groups>
+    <test name="Listeners" duration-ms="26932" started-at="2020-03-30T10:29:33Z" finished-at="2020-03-30T10:30:00Z">
+      <class name="Test.Listner.TestDemmo1">
+        <test-method status="PASS" signature="verify_LaunchWebsite()[pri:1, instance:Test.Listner.TestDemmo1@d2cc05a]" name="verify_LaunchWebsite" duration-ms="11041" started-at="2020-03-30T15:59:45Z" finished-at="2020-03-30T15:59:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Launch Website is Verified ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_LaunchWebsite -->
+        <test-method status="PASS" signature="verify_Login()[pri:2, instance:Test.Listner.TestDemmo1@d2cc05a]" name="verify_Login" duration-ms="4590" started-at="2020-03-30T15:59:56Z" finished-at="2020-03-30T16:00:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Login Successfully Verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_Login -->
+        <test-method status="PASS" signature="verify_getFailed()[pri:3, instance:Test.Listner.TestDemmo1@d2cc05a]" name="verify_getFailed" duration-ms="1" started-at="2020-03-30T16:00:00Z" finished-at="2020-03-30T16:00:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Test Case is Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_getFailed -->
+        <test-method status="PASS" signature="verify_getSkip()[pri:0, instance:Test.Listner.TestDemmo1@d2cc05a]" name="verify_getSkip" duration-ms="1" started-at="2020-03-30T16:00:00Z" depends-on-methods="Test.Listner.TestDemmo1.verify_getFailed" finished-at="2020-03-30T16:00:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Test Case is Skiped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_getSkip -->
+      </class> <!-- Test.Listner.TestDemmo1 -->
+      <class name="Test.Listner.TestDemo">
+        <test-method status="PASS" signature="getFail()[pri:0, instance:Test.Listner.TestDemo@4520ebad]" name="getFail" duration-ms="10" started-at="2020-03-30T15:59:33Z" finished-at="2020-03-30T15:59:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Test Case is Faild ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getFail -->
+        <test-method status="PASS" signature="getTitle()[pri:1, instance:Test.Listner.TestDemo@4520ebad]" name="getTitle" duration-ms="11262" started-at="2020-03-30T15:59:33Z" finished-at="2020-03-30T15:59:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Title is Matched ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="getSkip()[pri:0, instance:Test.Listner.TestDemo@4520ebad]" name="getSkip" duration-ms="1" started-at="2020-03-30T15:59:45Z" depends-on-methods="Test.Listner.TestDemo.getFail" finished-at="2020-03-30T15:59:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[Info] : Test Case is Skiped ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getSkip -->
+      </class> <!-- Test.Listner.TestDemo -->
+    </test> <!-- Listeners -->
+  </suite> <!-- Suite -->
+</testng-results>
