@@ -38,7 +38,7 @@ public class TestDemmo1
 	{
 		System.out.println("This test case is going to fail");
 		Assert.assertTrue(true);
-		Reporter.log("[Info] : Test Case is Failed");
+		Reporter.log("[Info] : Test Case is Pass");
 	}
 	@Test(dependsOnMethods= {"verify_getFailed"})
 	public void verify_getSkip()
